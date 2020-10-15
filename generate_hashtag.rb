@@ -2,7 +2,6 @@ def generateHashtag(str)
   return false if str.empty? || str.length == str.count(" ")
   hashtag = "#" + str.split(" ").map {|word| word.capitalize}.join
   return false if hashtag.length > 140
-  p str
   hashtag
 end
 
